@@ -37,10 +37,3 @@ for cv_param in cv_params:
 	    predictions.append(yhat)
 	    obs = trainY[t]
 	    history.append(obs)
-	    print('predicted=%f, expected=%f' % (yhat, obs))
-    error = mean_squared_error(trainY, predictions)
-    print('Test MSE: %.3f' % error)
-    # plot
-    pyplot.plot(trainY)
-    pyplot.plot(predictions)
-    pyplot.show()
